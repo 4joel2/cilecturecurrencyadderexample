@@ -35,9 +35,10 @@ jobs:
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
     - name: Run PHPUnit tests
-      run: vendor/bin/phpunit tests --log-unit junit.yaml
+      run: vendor/bin/phpunit tests --log-junit junit.xml
 
     - name: Upload test results
+      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: phpunit-junit-report
