@@ -1,0 +1,1 @@
+{"version":2,"defects":{"CurrencyConverterTest::testConvertUSDToEUR":7,"MoneyAdderTest::testAddUSDAndEUR":7},"times":{"CurrencyConverterTest::testConvertUSDToEUR":0.024,"CurrencyConverterTest::testSameCurrency":0.001,"MoneyAdderTest::testAddUSDAndEUR":0.001}}
