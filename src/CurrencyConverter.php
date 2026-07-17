@@ -23,7 +23,7 @@ class CurrencyConverter
             throw new Exception("Conversion rate from $fromCurrency to $toCurrency not available.");
         }
 
-        return $amount * $this->exchangeRates[$toCurrency][$fromCurrency];
+        return $amount * $this->exchangeRates[$fromCurrency][$toCurrency];
     }
 }
 
